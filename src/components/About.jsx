@@ -18,14 +18,16 @@ const About = () => {
 						<div></div>
 					</div>
 					<div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-						<p>
-							Hello there. I'm Russell Morbey, pleasure to meet you. Please take a look around.
-						</p>
-					</div>
-					<div>
-						<p>
-							A software developer with experience in building responsive and scalable web apps...
-						</p>
+						<div className='sm:text-right text-4xl font-bold'>
+							<p>
+								Hello there. I'm Russell Morbey, pleasure to meet you. Please take a look around.
+							</p>
+						</div>
+						<div>
+							<p>
+								A software developer with experience in building responsive and scalable web apps...
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
