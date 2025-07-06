@@ -44,6 +44,11 @@ const Navbar = () => {
 					Contact
 					</Link>
 				</li>
+				<li>
+					<Link to='other' smooth={true} duration={500}>
+					Other
+					</Link>
+				</li>
 			</ul>
 
 			<div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
