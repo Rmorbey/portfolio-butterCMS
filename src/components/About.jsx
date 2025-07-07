@@ -1,6 +1,6 @@
 import React from 'react'
 
-const About = () => {
+const About = ( {content} ) => {
 	return (
 		<div
 		name='about'
@@ -20,13 +20,12 @@ const About = () => {
 					<div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
 						<div className='sm:text-right text-4xl font-bold'>
 							<p>
-								Hey. I'm Russell Morbey, pleasure to meet you. 
-								Please take a look around.
+								{content?.fields.about_caption}
 							</p>
 						</div>
 						<div>
 							<p>
-								A software developer with experience in building responsive and scalable web apps...
+								{content?.fields.about_main_details}
 							</p>
 						</div>
 					</div>
