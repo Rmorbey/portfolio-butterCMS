@@ -31,7 +31,7 @@ function App() {
       <Skills content={data[2]}/>
       <Works content={data[3]}/>
       <Contact />
-      <Other />
+      <Other content={data[4]}/>
     </div>
   );
 }
