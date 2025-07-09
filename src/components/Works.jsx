@@ -8,15 +8,15 @@ const Works = ({content}) => {
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500'>Work</p>
           <p className='py-6 text-2xl'>{content?.fields.work_header}</p>
         </div>
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+        <div className='w-full grid grid-cols-2 sm:grid-cols-2 gap-4 text-center py-8'>
           {content?.fields.works.map((work, index) => {
             return (
               <div
                 style={{ backgroundImage: `url(${work.work_image})` }}
-                className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+                className="shadow-lg shadow-[#040c16] group container rounded-md justify-center items-center mx-auto content-div flex flex-col"
                 key={index}
               >
-                <div className="opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col">
+                <div className="opacity-0 group-hover:opacity-100 bg-cyan-800 flex flex-col justify-center items-center rounded-md">
                   <span className=" text-lg font-bold text-white tracking-wider">
                     {work.work_title}
                   </span>
